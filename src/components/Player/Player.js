@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'react-proptypes'
-import { timeFormat, timeFormatDisabled } from '../Formaters'
+import { timeFormat, timeFormatDisabled } from '../../Formaters'
 
 import { Button, Slider, Popover, Row, Col } from 'antd'
 
@@ -56,7 +56,7 @@ export class Player extends React.Component {
     this.props.onSeek(value)
   }
 
-  componentDidUpdate(prevProps, prevState, snapShot) {
+  componentDidUpdate(prevProps, prevState) {
     if(this.props.songInfo) {
       if (!prevProps.songInfo)
         this.setState({

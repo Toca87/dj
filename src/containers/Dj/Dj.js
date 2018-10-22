@@ -3,9 +3,9 @@ import React from 'react'
 import { Affix, Button, Divider, Input, Popover, Layout } from 'antd'
 
 import uuid from 'uuid/v4'
-import { timeFormat } from '../Formaters'
-import { Music, MusicLite } from '../components/Music'
-import { Player } from '../containers/Player'
+import { timeFormat } from '../../Formaters'
+import { Music, MusicLite } from '../../components/Music/Music'
+import { Player } from '../../components/Player/Player'
 
 const { Header, Content, Footer } = Layout
 
@@ -19,8 +19,6 @@ export class Dj extends React.Component {
   }
 
   onSearch = () => {
-    // TODO: Remove me. For mocking only
-    // TODO: fetch data and store it in state.musicList
     const currentSong = songList[0];
     currentSong.currentTime = () => (10);
     currentSong.isPlaying = () => (false);
@@ -29,67 +27,34 @@ export class Dj extends React.Component {
       currentSong: currentSong,
       queue: songList,
     })
-
-    // const serverPath = new URL('http://127.0.0.1:5002/') // TODO: Make server path come from gatsby-config or environment new URL('http://127.0.0.1:5002/')
-    // console.debug("serverPath:", serverPath)
-    // const endpoint = new URL('search/', serverPath)
-    // const encodedSearch = encodeURI(this.state.searchString)
-    // console.debug("encodedSearch:", encodedSearch)
-    // const url = new URL(encodedSearch, endpoint)
-    // console.debug("GET:", url)
-    // fetch(
-    //   url.href,
-    //   {
-    //     method: 'GET',
-    //     mode: 'cors',
-    //     headers: {
-    //       'Accept': 'application/json',
-    //       'Content-Type': 'application/json',
-    //     },
-    //   }
-    // )
-    //   .then((resolve, reject) => {
-    //       if(resolve)
-    //         console.debug("Resolve:", resolve)
-    //       else
-    //         console.debug("Reject:", reject)
-    //     }
-    //   )
   }
 
   onVolume = (volume) => {
     console.debug("Volume:", volume)
-    // TODO: FINISH ME!
   }
 
   onSeek = (seek) => {
     console.debug("Seek:", seek, "(", timeFormat(seek), ")")
-    // TODO: FINISH ME!
   }
 
   onPlay = () => {
     console.debug("Play!");
-    // TODO: FINISH ME!
   }
 
   onPause = () => {
     console.debug("Pause!");
-    // TODO: FINISH ME!
   }
 
   onBackward = () => {
     console.debug("Backward!");
-    // TODO: FINISH ME!
   }
 
   onForward = () => {
     console.debug("Forward!");
-    // TODO: FINISH ME!
   }
 
   onFinish = () => {
     console.debug("Song Finished!");
-    // TODO: FINISH ME!
   }
 
   onAdd = (songUUID) => {
@@ -104,7 +69,6 @@ export class Dj extends React.Component {
       ).title,
       ")"
     )
-    // TODO: FINISH ME!
   }
 
   onSkipTo = (songUUID) => {
@@ -119,11 +83,6 @@ export class Dj extends React.Component {
       ).title,
       ")"
     )
-    // TODO: FINISH ME!
-  }
-
-  componentDidMount() {
-    // TODO: Fetch current playing song and set it to state.currentSong
   }
 
   render() {
@@ -228,7 +187,6 @@ export class Dj extends React.Component {
     )
   }
 }
-
 
 const songList = [
   {

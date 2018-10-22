@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { timeFormat } from '../Formaters'
+import { timeFormat } from '../../Formaters'
 
 import { Row, Col, Button, Popconfirm } from 'antd'
 
@@ -10,7 +10,7 @@ export const Music = ({songInfo, onAdd}) => (
     align='middle'
     type='flex'
   >
-    <Col span={22}>
+    <Col span={20}>
       <h1>{songInfo.title}</h1>
       <h2>{songInfo.description}</h2>
       <h3>{timeFormat(songInfo.duration)}|{songInfo.visualizations}</h3>
