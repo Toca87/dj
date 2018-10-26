@@ -4,7 +4,8 @@ list of songs with title, artist, etc. and a visual music player with all the bu
 you'd normally find in a music player such as play, pause, forward, etc.
 
 It's all made with [react](https://reactjs.org) and [ant.design](https://ant.design)
-##Use
+
+## Use
 Run:
 
     yarn install
