@@ -31,4 +31,4 @@ To see debug messages (Chrome):
     Inspect(Ctrl+Shift+I) ->  Console -> Dropdown right to Filter input box -> Check: Verbose
 
 You can also see the debug messages in the [github pages link](https://toca87.github.io/dj/) 
-in the try section.
+in the Try section.
