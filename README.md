@@ -5,6 +5,9 @@ you'd normally find in a music player such as play, pause, forward, etc.
 
 It's all made with [react](https://reactjs.org) and [ant.design](https://ant.design)
 
+## Try
+Go to [https://toca87.github.io/dj/](https://toca87.github.io/dj/)
+
 ## Use
 Run:
 
@@ -26,3 +29,6 @@ your own purpose. Check the src/.
 To see debug messages (Chrome):
 
     Inspect(Ctrl+Shift+I) ->  Console -> Dropdown right to Filter input box -> Check: Verbose
+
+You can also see the debug messages in the [github pages link](https://toca87.github.io/dj/) 
+in the try section.
